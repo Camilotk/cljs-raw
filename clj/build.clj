@@ -3,6 +3,8 @@
 
 ;; Compiler options:
 ;; :output-to = define the name of the output file
-(def compiler-options {:output-to "compiled.js"})
+;; :main = tells the namespace of main goog compiler function to it be loaded
+(def compiler-options {:output-to "compiled.js"
+                       :main 'demo.main})
 
 (cljs/build "cljs" compiler-options)
