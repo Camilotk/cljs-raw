@@ -7,7 +7,12 @@
 ;; :optimizations = optimizations for smaller builds. many options, consult on wiki
 ;;                  in any optimized build all files are bundled in compiled.js so
 ;;                  no need to define :main anymore.
+;; :source-map = add source maps to the project that are bundled in the compiled.js.map.
+;; :output-dir = define a folder for the > intermediaries < compiled output.
+;;               the compiled files still remains on root.
 (def compiler-options {:output-to "compiled.js"
+                       :source-map "compiled.js.map"
+                       :output-dir "out"
                        :optimizations :whitespace})
 
 ;; Compiler build function

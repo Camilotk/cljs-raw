@@ -2,3 +2,4 @@
 .lsp
 out
 compiled.js
+compiled.js.map
